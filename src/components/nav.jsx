@@ -1,16 +1,21 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
-function nav () {
+function Nav () {
+
   return (
-  <div className="nav">
-    <ul>
-      <li>Work</li>
-      <li>Blog</li>
-      <li>About</li>
-      <li>Contact</li>
-    </ul>
-  </div>
+    <div className="nav">
+      <nav>
+      <ul>
+        <li><NavLink to="/projects">projects</NavLink></li>
+        <li><NavLink to="/blog">blog</NavLink></li>
+        <li><NavLink to="/about">about</NavLink></li>
+        <li><NavLink to="/contact">contact</NavLink></li>
+      </ul>
+    </nav>
+    </div>
   )
 }
 
-export default nav
+
+export default Nav;

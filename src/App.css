@@ -1,7 +1,12 @@
 h1 {
   font-family: 'Major Mono Display', monospace;
-  font-size: 4rem;
-  margin: 2rem;
+  font-size: 5.5rem;
+  margin:1rem 1rem 5rem 1rem;
+  /* background-color: rgba(0, 0, 0, 0); */
+  /* display: inline-flex; */
+}
+.span {
+  display: inline-flex
 }
 
 .blinking-cursor {
@@ -14,17 +19,57 @@ h1 {
   animation: 1s blink step-end infinite;
 }
 
-.model {
-  height: 100vh;
-  width: 100vw;
+.project {
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.landing {
+
+.header {
   position: absolute;
 }
 
+  .model {
+      /* height: 100vh;
+      width: 100vw; */
+  }
+
+.landing {
+  /* position: absolute; */
+}
+
+.contact p {
+  margin: 1rem;
+}
+
 .nav {
-  
+  position: absolute;
+  top: 10rem;
+  right: -10rem;
+  color: black;
+  transform: rotate(90deg);
+  display: flex;
+}
+
+.nav ul {
+  display: inline-flex;
+}
+
+.nav li {
+  margin: 2rem;
+  list-style-type: none;
+}
+
+li a {
+ text-decoration: none;
+ color: red;
+}
+
+.project img {
+  margin: 0 0 1rem 0;
+  width: 80%;
+  overflow: hidden;
 }
 
 @keyframes "blink" {

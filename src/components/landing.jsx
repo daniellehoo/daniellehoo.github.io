@@ -1,9 +1,15 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
+import Header from '../partials/header';
+import Model from './threejs';
+import Nav from './nav';
+
 
 function landing () {
   return (
   <div className="landing">
-    <h1>Danielle Hoo<span class="blinking-cursor">|</span></h1>
+    <Header />
+    <Model />
+    <Nav />
   </div>
   )
 }

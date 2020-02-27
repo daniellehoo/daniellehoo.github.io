@@ -23,7 +23,7 @@ class Model extends Component {
   this.camera = new THREE.PerspectiveCamera(
     75,
     width / height,
-    0.0001,
+    0.001,
     10000
   )
   this.camera.position.z = 4
@@ -92,7 +92,7 @@ this.mount.appendChild(this.renderer.domElement)
       let model_bbox1 = new THREE.Box3().setFromObject(this_.model);
       let length_x = model_bbox1.max.x +.235;
       let length_y = model_bbox1.max.y;
-      let target_length = 1.25 
+      let target_length = 3.5
 
       this_.model.scale.set(target_length / length_x, target_length / length_y, target_length / length_y)
       // this_.model.rotation.x = Math.PI / 2;
@@ -164,7 +164,7 @@ this.start()
 
   render() {
     return (
-      <div
+      <div className="model"
         style={{ width: '100vw', height: '100vh' }}
         ref={(mount) => { this.mount = mount }}
       />
