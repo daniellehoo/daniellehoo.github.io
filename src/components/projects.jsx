@@ -22,14 +22,14 @@ function projects () {
   {
     id: 3,
     title: "Amnesty",
-    img: "url"
+    img: "https://live.staticflickr.com/65535/49593280613_513f9fe243_b.jpg"
   },
 ]
 
 const grid = projects.map(project => (
   <div className={`project id_${project.id}`}>
 
-    {project.title}
+    <h2 className='title'>{project.title}</h2>
     <img src={project.img}/>
   </div>
 ) )
@@ -37,7 +37,7 @@ const grid = projects.map(project => (
   return (
   <div className="projects">
     <Nav />
-    <h1>Here are my projects</h1>
+    <h1>Projects</h1>
     {grid}
   </div>
   )

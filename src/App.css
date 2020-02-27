@@ -21,10 +21,15 @@ h1 {
 
 .project {
   display: grid;
-  width: 80%;
+  width: 50%;
   grid-template-columns: repeat(2, 1fr);
 }
 
+.project .title {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin: 1rem;
+}
 
 .header {
   position: absolute;
@@ -46,7 +51,7 @@ h1 {
 .nav {
   position: absolute;
   top: 10rem;
-  right: -10rem;
+  right: -12rem;
   color: black;
   transform: rotate(90deg);
   display: flex;
@@ -63,13 +68,12 @@ h1 {
 
 li a {
  text-decoration: none;
- color: red;
+ color: black;
 }
 
 .project img {
   margin: 0 0 1rem 0;
-  width: 80%;
-  overflow: hidden;
+  width: 50%;
 }
 
 @keyframes "blink" {
