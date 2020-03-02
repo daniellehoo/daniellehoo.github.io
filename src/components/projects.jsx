@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { Link, useState } from 'react';
 import Nav from './nav';
+import {  Switch, Route, Redirect } from 'react-router-dom';
 
 function projects () {
   const projects = [
@@ -28,11 +29,14 @@ function projects () {
 
 const grid = projects.map(project => (
   <div className={`project id_${project.id}`}>
-
+    {/* <project></project> */}
+    <a href={`/${project.title}`}>{project.title}</a>
     <h2 className='title'>{project.title}</h2>
     <img src={project.img}/>
   </div>
 ) )
+
+
 
   return (
   <div className="projects">

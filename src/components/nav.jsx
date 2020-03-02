@@ -8,7 +8,7 @@ function Nav () {
       <nav>
       <ul>
         <li><NavLink to="/projects">projects</NavLink></li>
-        <li><NavLink to="/blog">blog</NavLink></li>
+        <li><a href="https://daniellehoo.github.io/blog/">blog</a></li>
         <li><NavLink to="/about">about</NavLink></li>
         <li><NavLink to="/contact">contact</NavLink></li>
       </ul>

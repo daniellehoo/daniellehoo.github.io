@@ -7,6 +7,8 @@ import Contact from './components/contact';
 import Landing from './components/landing';
 import Model from './components/threejs';
 import Projects from './components/projects';
+import nicaragua from './components/nicaragua';
+
 import './App.css';
 
 function App () {
@@ -14,6 +16,7 @@ function App () {
       <div className="App">
               <Switch>
                 <Route path='/contact' component={Contact} />
+                <Route path='/nicaragua'component={nicaragua}/>
                 <Route path='/about' component={About} />
                 <Route path='/projects' component={Projects} />
                 <Route path='/' component={Landing}/>
