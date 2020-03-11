@@ -9,6 +9,8 @@ function about () {
       <p>Background in art history</p>
       <p>Software engineer</p>
       <p>Researcher and web developer</p>
+      <div className="spacer"></div>
+      <a href="mailto:daniellem.hoo@gmail.com?subject=Hello!">Say Hello</a>  
     </div>
   )
 }

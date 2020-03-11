@@ -19,6 +19,12 @@ h1 {
   animation: 1s blink step-end infinite;
 }
 
+.projects a, .contact a {
+  color: black;
+  text-decoration: none;
+  margin: 1rem;
+}
+
 .project {
   display: grid;
   width: 50%;
@@ -51,7 +57,7 @@ h1 {
 .nav {
   position: absolute;
   top: 10rem;
-  right: -12rem;
+  right: -9rem;
   color: black;
   transform: rotate(90deg);
   display: flex;

@@ -1,9 +1,7 @@
 import React, { Link, useState } from "react";
-import Nav from "./nav";
-import { Switch, Route, Redirect } from "react-router-dom";
 
-function projects() {
-  const projects = [
+function social() {
+  const buttons = [
     {
       id: 0,
       title: "Chinatown USA",
@@ -35,18 +33,12 @@ function projects() {
   ));
 
   return (
-    <div className="projects">
-      <Nav />
-      <h1>Projects</h1>
+    <div className="social">
+      <h1>Social Buttons</h1>
       {grid}
     </div>
   );
 }
 
-// function Project() {
-//   return(
-    
-//   )
-// }
 
-export default projects;
+export default social;

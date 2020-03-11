@@ -8,8 +8,8 @@ function landing () {
   return (
   <div className="landing">
     <Header />
-    <Model />
     <Nav />
+    <Model />
   </div>
   )
 }
