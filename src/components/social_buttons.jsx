@@ -4,41 +4,51 @@ function social() {
   const buttons = [
     {
       id: 0,
-      title: "Chinatown USA",
-      img: "https://live.staticflickr.com/65535/49593430952_712dc0cce1_b.jpg"
+      url: "http://www.instagram.com/danihoo",
+      class: "fab fa-instagram"
     },
     {
       id: 1,
-      title: "Our Children's Trust",
-      img: "https://live.staticflickr.com/65535/49592718198_6760f8c00d_b.jpg"
+      url: "http://github.com/daniellehoo",
+      class: "fab fa-github"
     },
     {
       id: 2,
-      title: "Nicaragua",
-      img: "https://live.staticflickr.com/65535/49593769191_4de582e8d0_b.jpg"
+      url: "http://www.twitter.com/daniellehoo",
+      class: "fab fa-twitter"
     },
 
     {
       id: 3,
-      title: "Amnesty",
-      img: "https://live.staticflickr.com/65535/49593280613_513f9fe243_b.jpg"
+      url: "http://www.soundcloud.com/danihoo",
+      class: "fab fa-soundcloud"
+    },
+    {
+      id: 4,
+      url: "http://www.linkedin.com/in/danielle-hoo",
+      class: "fab fa-linkedin"
+    },
+    {
+      id: 5,
+      url: "http://www.medium.com/@danihoo",
+      class: "fab fa-medium"
+    },
+    {
+      id: 6,
+      url: "https://www.pinterest.com/daniellemhoo/",
+      class: "fab fa-pinterest"
     }
   ];
 
-  const grid = projects.map(project => (
-    <div className={`project id_${project.id}`}>
-      <a href={`/${project.title}`}>{project.title}</a>
-      <img src={project.img} />
+  const grid = buttons.map(button => (
+    <div className={`button id_${button.id}`}>
+      <a href={`${button.url}`}>
+        <i className={`${button.class}`}></i>
+      </a>
     </div>
   ));
 
-  return (
-    <div className="social">
-      <h1>Social Buttons</h1>
-      {grid}
-    </div>
-  );
+  return <div className="social">{grid}</div>;
 }
-
 
 export default social;

@@ -7,8 +7,8 @@ import Nav from './nav';
 function landing () {
   return (
   <div className="landing">
-    <Header />
     <Nav />
+    <Header />
     <Model />
   </div>
   )

@@ -1,5 +1,6 @@
 import React, { Link, useState } from "react";
 import Nav from "./nav";
+import Social from "./social_buttons";
 import { Switch, Route, Redirect } from "react-router-dom";
 
 function projects() {
@@ -39,14 +40,9 @@ function projects() {
       <Nav />
       <h1>Projects</h1>
       {grid}
+      <Social />
     </div>
   );
 }
-
-// function Project() {
-//   return(
-    
-//   )
-// }
 
 export default projects;
