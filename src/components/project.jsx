@@ -1,9 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { useParams } from "react-router-dom";
+import Nav from "./nav";
 
-function project () {
-    return(
-        <div>this is a project</div>
-    )
+function Project() {
+  let { url } = useParams();
+  return (
+    <div>
+      <Nav />
+      {url}
+    </div>
+  );
 }
 
-export default project
+export default Project;

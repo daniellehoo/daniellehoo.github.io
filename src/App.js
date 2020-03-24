@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Project from "./components/project";
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,11 +23,13 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/nicaragua" component={nicaragua} />
+          <Route exact path="/" component={Landing} />
           <Route path="/about" component={About} />
           <Route path="/projects" component={Projects} />
-          <Route path="/" component={Landing} />
-          <Route path="canvas" component={canvas} />
+          {/* <Route path="canvas" component={canvas} /> */}
+          <Route path="/:url">
+            <Project />
+          </Route>
         </Switch>
       </Router>
     </div>
