@@ -18,21 +18,55 @@ import nicaragua from "./components/nicaragua";
 
 import "./App.css";
 
+const projects = [
+  {
+    id: 0,
+    title: "Chinatown USA",
+    url: "chinatown_usa",
+    img: "https://live.staticflickr.com/65535/49593430952_712dc0cce1_b.jpg"
+  },
+  {
+    id: 1,
+    title: "Our Children's Trust",
+    url: "our_childrens_trust",
+    img: "https://live.staticflickr.com/65535/49592718198_6760f8c00d_b.jpg"
+  },
+  {
+    id: 2,
+    title: "Nicaragua",
+    url: "nicaragua",
+    img: "https://live.staticflickr.com/65535/49593769191_4de582e8d0_b.jpg"
+  },
+
+  {
+    id: 3,
+    title: "Amnesty International",
+    url: "amnesty_international",
+    img: "https://live.staticflickr.com/65535/49593280613_513f9fe243_b.jpg"
+  }
+];
+
+const ProjectContext = React.createContext(projects);
+
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Switch>
-          <Route exact path="/" component={Landing} />
-          <Route path="/about" component={About} />
-          <Route path="/projects" component={Projects} />
-          {/* <Route path="canvas" component={canvas} /> */}
-          <Route path="/:url">
-            <Project />
-          </Route>
-        </Switch>
-      </Router>
-    </div>
+    // <ProjectContext.Provider>
+      <div className="App">
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Landing} />
+            <Route path="/about" component={About} />
+            <Route path="/projects"
+            render={(props) => <Projects {...props} projectsData={projects} />} />
+            {/* <Route path="canvas" component={canvas} /> */}
+            <Route path="/:url">
+              <Project 
+              data={projects}/>
+            </Route>
+          </Switch>
+        </Router>
+      </div>
+    // </ProjectContext.Provider>
   );
 }
 
