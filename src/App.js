@@ -14,7 +14,6 @@ import About from "./components/about";
 import Landing from "./components/landing";
 import Model from "./components/threejs";
 import Projects from "./components/projects";
-import nicaragua from "./components/nicaragua";
 
 import "./App.css";
 
@@ -23,26 +22,30 @@ const projects = [
     id: 0,
     title: "Chinatown USA",
     url: "chinatown_usa",
-    img: "https://live.staticflickr.com/65535/49593430952_712dc0cce1_b.jpg"
+    img: "https://live.staticflickr.com/65535/49593430952_712dc0cce1_b.jpg",
+    description: "CHINATTOWN"
   },
   {
     id: 1,
     title: "Our Children's Trust",
     url: "our_childrens_trust",
-    img: "https://live.staticflickr.com/65535/49592718198_6760f8c00d_b.jpg"
+    img: "https://live.staticflickr.com/65535/49592718198_6760f8c00d_b.jpg",
+    description: "our childreen's trustdfssdf "
   },
   {
     id: 2,
     title: "Nicaragua",
     url: "nicaragua",
-    img: "https://live.staticflickr.com/65535/49593769191_4de582e8d0_b.jpg"
+    img: "https://live.staticflickr.com/65535/49593769191_4de582e8d0_b.jpg",
+    description: "GIEI NICA "
   },
 
   {
     id: 3,
     title: "Amnesty International",
     url: "amnesty_international",
-    img: "https://live.staticflickr.com/65535/49593280613_513f9fe243_b.jpg"
+    img: "https://live.staticflickr.com/65535/49593280613_513f9fe243_b.jpg",
+    description: "teear gassss "
   }
 ];
 

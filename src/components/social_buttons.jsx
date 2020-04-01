@@ -1,4 +1,4 @@
-import React, { Link, useState } from "react";
+import React from "react";
 
 function social() {
   const buttons = [
@@ -41,7 +41,7 @@ function social() {
   ];
 
   const grid = buttons.map(button => (
-    <div className={`button id_${button.id}`}>
+    <div className={`button id_${button.id}, key=${button.id}`}>
       <a href={`${button.url}`}>
         <i className={`${button.class}`}></i>
       </a>
