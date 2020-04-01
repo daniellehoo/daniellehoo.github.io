@@ -31,7 +31,8 @@ h1 {
 
 .project {
   display: grid;
-  width: 50%;
+  /* width: 50%; */
+  padding-top: 2.5rem;
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -54,8 +55,9 @@ h1 {
   font-size: 1.5rem;
 }
 
-.social .button:hover {
-  background-color: red;
+.social .button a:hover {
+ color: red!important; 
+ 
 }
 
 .landing {

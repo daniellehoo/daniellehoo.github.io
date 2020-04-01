@@ -23,13 +23,14 @@ const projects = [
     title: "Chinatown USA",
     url: "chinatown_usa",
     img: "https://live.staticflickr.com/65535/49593430952_712dc0cce1_b.jpg",
-    description: "CHINATTOWN"
+    description: "Chinatown, USA was inspired by The Chinese in America"
   },
   {
     id: 1,
     title: "Our Children's Trust",
     url: "our_childrens_trust",
     img: "https://live.staticflickr.com/65535/49592718198_6760f8c00d_b.jpg",
+    
     description: "our childreen's trustdfssdf "
   },
   {
