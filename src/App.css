@@ -1,17 +1,17 @@
+/* Global */
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
 h1 {
-  font-family: 'Major Mono Display', monospace;
+  font-family: "Work Sans", sans-serif;
   font-size: 5rem;
   margin: 1rem;
-  /* background-color: rgba(0, 0, 0, 0); */
-  /* display: inline-flex; */
-}
-.span {
-  display: inline-flex
 }
 
 .blinking-cursor {
   font-weight: 100;
-  color: #2E3D48;
+  color: #2e3d48;
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
   -ms-animation: 1s blink step-end infinite;
@@ -19,7 +19,11 @@ h1 {
   animation: 1s blink step-end infinite;
 }
 
-.projects a, .project a, .contact a, .landing a {
+.projects a,
+.project a,
+.contact a,
+.landing a {
+  font-family: "Work Sans", sans-serif;
   color: black;
   text-decoration: none;
   margin: 1rem;
@@ -30,9 +34,11 @@ h1 {
 }
 
 .project {
+  font-family: "Work Sans", sans-serif;
   display: grid;
-  /* width: 50%; */
+  width: 60%;
   padding-top: 2.5rem;
+  margin: 1rem;
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -50,22 +56,17 @@ h1 {
   position: absolute;
   width: 325px;
   display: flex;
-  left: calc(50% - 162.5px); 
+  left: calc(50% - 162.5px);
   bottom: 50px;
   font-size: 1.5rem;
 }
 
 .social .button a:hover {
- color: red!important; 
- 
+  color: red !important;
 }
 
-.landing {
-  position: absolute;
-}
-
-.contact p {
-  margin: 1rem;
+.contact p, .about p {
+  margin: 2rem;
 }
 
 .nav {
@@ -86,9 +87,10 @@ h1 {
   list-style-type: none;
 }
 
+
 li a {
- text-decoration: none;
- color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .project img {
@@ -97,10 +99,18 @@ li a {
 }
 
 @keyframes "blink" {
-  from, to {
+  from,
+  to {
     color: transparent;
   }
   50% {
     color: black;
   }
+}
+
+.homeButton img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10%;
 }

@@ -3,7 +3,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 // import OBJLoader from 'three-react-obj-loader';
 import OrbitControls from 'orbit-controls-es6';
 import * as THREE from 'three';
-import model from '../model/maneki-neko/luckycat.glb';
+import model from '../assets/maneki-neko/luckycat.glb';
 
 class Model extends Component {
   constructor(props) {

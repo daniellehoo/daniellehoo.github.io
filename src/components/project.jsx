@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Nav from "./nav";
 import Social from "./social_buttons";
 
+
 function replaceTextWithLinks(text){
   let regexChinatown = /The Chinese in America/g;
   let linkedText = text.replace(
@@ -26,11 +27,13 @@ function Project(data) {
     ) : null;
   });
   return (
+    <>
     <div className="project">
       <Nav />
       {description}
       <Social />
     </div>
+    </>
   );
 }
 

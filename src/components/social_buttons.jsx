@@ -48,7 +48,8 @@ function social() {
     </div>
   ));
 
-  return <div className="social">{grid}</div>;
+  return <div className="social">{grid}
+   </div>;
 }
 
 export default social;

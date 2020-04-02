@@ -1,17 +1,20 @@
-import React, { useState } from 'react';
-import Header from '../partials/header';
-import Model from './threejs';
-import Nav from './nav';
+import React, { useState } from "react";
+import Header from "../partials/header";
+import Model from "./threejs";
+import Nav from "./nav";
 
 
-function landing () {
+import Social from "./social_buttons";
+
+function landing() {
   return (
-  <div className="landing">
-    <Nav />
-    <Header />
-    <Model />
-  </div>
-  )
+    <div className="landing">
+      <Nav />
+      <Header />
+      <Model />
+      <Social />
+    </div>
+  );
 }
 
-export default landing
+export default landing;

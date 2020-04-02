@@ -1,10 +1,14 @@
-import React from 'react';
-import Nav from './nav';
+import React from "react";
+import Nav from "./nav";
+import Home from "./homeButton";
 
-function about () {
+
+import Social from "./social_buttons";
+
+function about() {
   return (
     <div className="contact">
-      <Nav/>
+      <Nav />
       <h1>About</h1>
       <p>brooklyn, NY resident</p>
       <p>software engineer</p>
@@ -13,9 +17,17 @@ function about () {
       <p>occasional runner, wanderer & Canon G16 user</p>
 
       <div className="spacer"></div>
-      <p>Contact:</p><a href="mailto:daniellem.hoo@gmail.com?subject=Hello!">Email</a>  
+      <br></br>
+      <br></br>
+      <br></br>
+
+      <p>
+        contact:
+        <a href="mailto:daniellem.hoo@gmail.com?subject=Hello!">email</a>
+      </p>
+      <Social />
     </div>
-  )
+  );
 }
 
-export default about
+export default about;
