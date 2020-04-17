@@ -9,11 +9,10 @@ import {
   useParams
 } from "react-router-dom";
 
-import canvas from "./components/p5_canvas";
 import About from "./components/about";
 import Landing from "./components/landing";
-import Model from "./components/threejs";
 import Projects from "./components/projects";
+import Model from "./components/threejs";
 
 import "./App.css";
 
@@ -54,7 +53,6 @@ const ProjectContext = React.createContext(projects);
 
 function App() {
   return (
-    // <ProjectContext.Provider>
       <div className="App">
         <Router>
           <Switch>
@@ -62,7 +60,6 @@ function App() {
             <Route path="/about" component={About} />
             <Route path="/projects"
             render={(props) => <Projects {...props} projectsData={projects} />} />
-            {/* <Route path="canvas" component={canvas} /> */}
             <Route path="/:url">
               <Project 
               data={projects}/>
@@ -70,7 +67,6 @@ function App() {
           </Switch>
         </Router>
       </div>
-    // </ProjectContext.Provider>
   );
 }
 

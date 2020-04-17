@@ -50,6 +50,9 @@ h1 {
 
 .header {
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 800px;
 }
 
 .social {
