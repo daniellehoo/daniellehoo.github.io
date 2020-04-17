@@ -9,8 +9,7 @@ import Social from "./social_buttons";
 function landing() {
   return (
     <div className="landing">
-      <h1>Danielle Hoo</h1>
-      {/* <Header /> */}
+      <Header />
       <Nav />
       <Model />
       <Social />
