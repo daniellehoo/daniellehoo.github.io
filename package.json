@@ -21,7 +21,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://daniellehoo.github.io/",
+  "homepage": "https://daniellehoo.github.io/dev_portfolio",
   "eslintConfig": {
     "extends": "react-app"
   },
