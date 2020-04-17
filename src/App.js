@@ -57,14 +57,14 @@ function App () {
       <Router basename={`${process.env.PUBLIC_URL}/`}>
         <Switch>
           <Route exact path='/' component={Landing} />
-          <Route path='/:url'>
-            <Project data={projects} />
+        <Route path='/projects/:url'>
+          <Project data={projects} />
+        </Route>
           <Route
             path='/projects'
             render={props => <Projects {...props} projectsData={projects} />}
           />
-            <Route path='/about' component={About} />
-          </Route>
+          <Route path='/about' component={About} />
         </Switch>
       </Router>
     </div>
