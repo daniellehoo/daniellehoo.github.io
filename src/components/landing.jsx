@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Header from "../partials/header";
+import Header from "./header";
 import Model from "./threejs";
 import Nav from "./nav";
 
