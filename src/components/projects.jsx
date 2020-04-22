@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Nav from "./nav";
 import Social from "./social_buttons";
+import fish from "../assets/blue_fish.png";
+
 
 function projects(props) {
   const [id, setId] = useState("/");
@@ -25,6 +27,7 @@ function projects(props) {
     <div className="projects">
       <Nav />
       <h1>Projects</h1>
+      <img src={fish}/>
       {grid}
       <Social />
     </div>

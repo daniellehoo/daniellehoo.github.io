@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "./nav";
-import Home from "./homeButton";
+import soy from "../assets/soy_sauce.png";
 
 
 import Social from "./social_buttons";
@@ -10,6 +10,7 @@ function about() {
     <div className="contact">
       <Nav />
       <h1>About</h1>
+      <img src={soy} />
       <p>brooklyn, NY resident</p>
       <p>software engineer</p>
       <p>former Museum of Modern Art (MoMA) employee</p>

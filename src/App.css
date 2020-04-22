@@ -72,6 +72,28 @@ h1 {
   margin: 2rem;
 }
 
+.contact h1, .contact img {
+  display: inline;
+}
+
+.contact img {
+  position: absolute;
+  width: 20%;
+  min-width: 100px;
+  right: 10%;
+}
+
+.projects h1 {
+  display: inline;
+}
+
+.projects img {
+  width: 25%;
+  display: inline;
+  
+}
+
+
 .nav {
   position: absolute;
   top: 15rem;
