@@ -8,13 +8,16 @@ import {
   Link,
   useParams
 } from 'react-router-dom'
-
+import { createBrowserHistory } from 'history'
 import About from './components/about'
 import Landing from './components/landing'
 import Projects from './components/projects'
 import Model from './components/threejs'
 
 import './App.css'
+
+const history = createBrowserHistory()
+
 
 const projects = [
   {
@@ -54,7 +57,7 @@ const ProjectContext = React.createContext(projects)
 function App () {
   return (
     <div className='App'>
-      <Router basename={`${process.env.PUBLIC_URL}/`}>
+      <Router history={history} basename={`${process.env.PUBLIC_URL}/`}>
         <Switch>
           <Route exact path='/' component={Landing} />
         <Route path='/projects/:url'>

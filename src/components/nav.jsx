@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link, NavLink, useHistory } from "react-router-dom";
 import Home from "./homeButton";
 
-
-function Nav () {
-
+function Nav() {
   return (
     <div className="nav">
       <nav>
@@ -25,6 +23,7 @@ function Nav () {
       </nav>
     </div>
   );
+
 }
 
 
