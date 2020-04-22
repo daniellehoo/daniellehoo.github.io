@@ -7,7 +7,7 @@ import Social from "./social_buttons";
 
 function about() {
   return (
-    <div className="contact">
+    <div className="about">
       <Nav />
       <h1>About</h1>
       <img src={soy} />

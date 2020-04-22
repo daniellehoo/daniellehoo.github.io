@@ -21,7 +21,7 @@ h1 {
 
 .projects a,
 .project a,
-.contact a,
+.about a,
 .landing a {
   font-family: "Work Sans", sans-serif;
   color: black;
@@ -76,7 +76,7 @@ h1 {
   display: inline;
 }
 
-.contact img {
+.about img, img#fish {
   position: absolute;
   width: 20%;
   min-width: 100px;
@@ -90,9 +90,7 @@ h1 {
 .projects img {
   width: 25%;
   display: inline;
-  
 }
-
 
 .nav {
   position: absolute;
