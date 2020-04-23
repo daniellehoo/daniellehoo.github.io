@@ -3,9 +3,8 @@ import Nav from "./nav";
 import Social from "./social_buttons";
 import fish from "../assets/blue_fish.png";
 
-
 function projects(props) {
-  const [id, setId] = useState("/");
+  // const [id, setId] = useState("/");
   const projectsData = props.projectsData;
   // const history = useHistory();
 
