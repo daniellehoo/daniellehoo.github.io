@@ -59,20 +59,20 @@ function App () {
       <Router history={history} basename={`${process.env.PUBLIC_URL}/`}>
         <Switch>
           <Route exact path='/' component={Landing} />
-        <Route 
-        path='/projects/:url'
-        render={props => <Project {...props} projectsData={projects} />}
-        />
-        <Route
-        path='/projects'
-        render={props => <Projects {...props} projectsData={projects} />}
-        />
-        <Route path='/about' component={About} />
+          <Route
+            path='/projects'
+            render={props => <Projects {...props} projectsData={projects} />}
+          />
+          <Route path='/about' component={About} />
+          <Route
+            path='/:url'
+            render={props => <Project {...props} projectsData={projects} />}
+          />
         </Switch>
-        </Router>
-        </div>
-        )
-      }
-      
-      export default withRouter(App)
-      // <Project data={projects} />
+      </Router>
+    </div>
+  )
+}
+
+export default withRouter(App)
+// <Project data={projects} />

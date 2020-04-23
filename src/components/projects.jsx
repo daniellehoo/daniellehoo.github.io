@@ -10,7 +10,7 @@ function projects(props) {
 
   const grid = projectsData.map(project => (
     <div className={`project id_${project.id}`} key={project.id}>
-        <a href={`/projects/${project.url}`} onClick={() => handleClick(project.url)}>
+        <a href={`/${project.url}`} onClick={() => handleClick(project.url)}>
 
         {project.title}
       </a>
