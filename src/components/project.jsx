@@ -13,8 +13,11 @@ function replaceTextWithLinks(text) {
 }
 
 function Project(data) {
+  console.log(data)
   let { url } = useParams();
-  let projectData = Object.values(data)[0];
+  // let projectData = Object.values(data.projectsData)[0];
+    let projectData = data.projectsData;
+
   const description = projectData.map((thing) => {
     return thing.url === url ? (
       <div
