@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/static/media/blue_fish.d24dc50d.png"
   },
   {
-    "revision": "ff32805e4359dee13e51d4f0ab4ba7a8",
+    "revision": "b3623a8021aee82e6870be6b4f4a0a29",
     "url": "/index.html"
   }
 ];
