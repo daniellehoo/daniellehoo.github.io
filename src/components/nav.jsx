@@ -3,6 +3,8 @@ import { Link, NavLink, useHistory } from "react-router-dom";
 import Home from "./homeButton";
 
 function Nav() {
+      const history = useHistory();
+
   return (
     <div className="nav">
       <nav>
@@ -23,8 +25,11 @@ function Nav() {
       </nav>
     </div>
   );
-
 }
+
+// function onClick(history, ) {
+// history.push('/')
+// }
 
 
 export default Nav;

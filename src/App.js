@@ -1,23 +1,22 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Project from './components/project'
 import {
-  BrowserRouter as Router,
+  Router,
   Switch,
   Route,
   Redirect,
   Link,
-  useParams
+  useParams,
+  withRouter
 } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 import About from './components/about'
 import Landing from './components/landing'
 import Projects from './components/projects'
 import Model from './components/threejs'
-
 import './App.css'
 
 const history = createBrowserHistory()
-
 
 const projects = [
   {
@@ -74,4 +73,4 @@ function App () {
   )
 }
 
-export default App
+export default withRouter(App)

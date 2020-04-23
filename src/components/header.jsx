@@ -3,7 +3,7 @@ import React from 'react';
 function header () {
   return (
   <div className="header">
-    <h1>Danielle Hoo<span class="blinking-cursor">|</span></h1>
+    <h1>Danielle Hoo<span className="blinking-cursor">|</span></h1>
   </div>
   )
 }
