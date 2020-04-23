@@ -22,7 +22,7 @@
     "deploy": "gh-pages -b master -d build",
     "cleanup": "rm -rf node_modules/gh-pages/.cache"
   },
-  "homepage": "https://daniellehoo.github.io",
+  "homepage": "daniellehoo.com",
   "eslintConfig": {
     "extends": "react-app"
   },
