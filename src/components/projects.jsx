@@ -19,7 +19,7 @@ function projects(props) {
   ));
 
   function handleClick(project){
-    this.props.history.push(`/projects/${project.url}`)
+    this.props.history.push(`/${project.url}`)
   }
 
   return (
