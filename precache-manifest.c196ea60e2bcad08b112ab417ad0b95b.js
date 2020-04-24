@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "daniellehoo.com/static/media/blue_fish.d24dc50d.png"
   },
   {
-    "revision": "77b4213a825fe0865b3e60e287acc18b",
+    "revision": "796df3c73e057fadc646b9042af1d042",
     "url": "daniellehoo.com/index.html"
   }
 ];
