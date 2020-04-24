@@ -2,15 +2,18 @@ import React from "react";
 import Nav from "./nav";
 import soy from "../assets/soy_sauce.png";
 
-
 import Social from "./social_buttons";
 
 function about() {
   return (
     <div className="about">
-      <Nav />
+      <div>
+        <Nav />
+      </div>
       <h1>About</h1>
-      <img src={soy} />
+      <div>
+        <img src={soy} />
+      </div>
       <p>brooklyn, NY resident</p>
       <p>software engineer</p>
       <p>former Museum of Modern Art (MoMA) employee</p>

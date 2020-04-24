@@ -19,6 +19,12 @@ h1 {
   animation: 1s blink step-end infinite;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  /* margin: 0 500px 0 0; */
+}
+
 .projects a,
 .project a,
 .about a,
@@ -75,11 +81,17 @@ h1 {
 .contact h1, .contact img {
   display: inline;
 }
+.about img {
+  max-width: 100%;
+  margin: 0 140px 0 0;
+
+}
 
 .about img, img#fish {
   position: absolute;
   width: 20%;
-  min-width: 100px;
+  /* max-width: 100px; */
+  max-width: 100%;
   right: 10%;
 }
 
@@ -93,12 +105,13 @@ h1 {
 }
 
 .nav {
+  display: flex;
   position: absolute;
-  top: 15rem;
-  right: -10rem;
+  top: 15em;
+  right: -12em;
   color: black;
   transform: rotate(90deg);
-  display: flex;
+  width: 500px;
 }
 
 .nav ul {
