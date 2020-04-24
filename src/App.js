@@ -65,7 +65,7 @@ function App () {
           />
           <Route path='/about' component={About} />
           <Route
-            path='/:url'
+            exact path='/:url'
             render={props => <Project {...props} projectsData={projects} />}
           />
         </Switch>
