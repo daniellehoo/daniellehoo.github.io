@@ -88,6 +88,7 @@ border-bottom: 2px solid red;
 }
 .header input:focus {
   border-width: 0;
+  outline: none;
 }
 
 .social {
