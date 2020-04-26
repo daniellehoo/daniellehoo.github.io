@@ -8,7 +8,7 @@ function replaceTextWithLinks(text) {
   let linkedText = text.replace(
     regexChinatown,
     "<a href='https://www.penguinrandomhouse.com/books/288096/the-chinese-in-america-by-iris-chang/'>The Chinese in America</a>"
-  );
+  ).trim();
   return linkedText;
 }
 
@@ -22,6 +22,7 @@ function Project(data) {
     return thing.url === url ? (
       <div
         key={thing.id}
+        class="projectClass"
         dangerouslySetInnerHTML={{
           __html: replaceTextWithLinks(thing.description),
         }}
