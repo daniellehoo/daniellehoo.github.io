@@ -44,7 +44,7 @@ function Project(data) {
         {image}
         <div className="back">
           <a href="#/Projects">
-            Back to Projects
+            {`<< Back to Projects`}
           </a>
         </div>
         <Social />
