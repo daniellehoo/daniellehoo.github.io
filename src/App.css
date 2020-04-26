@@ -41,14 +41,14 @@ h1 {
   color: red;
 }
 
-.projectClass a:hover, .about a:hover {
+.projectClass a:hover, .about a:hover, .project a:hover {
 color: red;
 border-bottom: 2px solid red;
 }
 
 .project img {
   width: 100%;
-  margin-top: 1em;
+  margin: 1em 0;
 }
 
 .nav a:hover {
@@ -180,6 +180,10 @@ border-bottom: 2px solid red;
 li a {
   text-decoration: none;
   color: black;
+}
+
+.back a {
+  margin: 2rem 0;
 }
 
 /* .project img {

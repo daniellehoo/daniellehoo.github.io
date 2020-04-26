@@ -25,7 +25,7 @@ const projects = [
     url: "chinatown_usa",
     img: "https://live.staticflickr.com/65535/49593430952_712dc0cce1_b.jpg",
     description:
-      "Chinatown, USA was inspired by The Chinese in America by Iris Chang and the work of American conceptual artist, John Baldessari. It is the digital photgraphic capturing of Chinese own businesses in North America with minimal geometric interventions.",
+      "Chinatown, USA was inspired by The Chinese in America by Iris Chang and the work of American conceptual artist, John Baldessari. It is the digital photographic capturing of Chinese own businesses in North America with minimal geometric interventions.",
   },
   {
     id: 1,
