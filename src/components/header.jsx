@@ -14,7 +14,7 @@ function header () {
           name="lname"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          autofocus
+          autoFocus
         ></input>
       </form>
     </div>

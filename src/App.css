@@ -35,18 +35,31 @@ h1 {
   margin: 1rem;
 }
 
+
 .projectClass a {
   margin: 0;
+  color: red;
+}
+
+.projectClass a:hover, .about a:hover {
+color: red;
+border-bottom: 2px solid red;
+}
+
+.project img {
+  width: 100%;
+  margin-top: 1em;
 }
 
 .nav a:hover {
   color: red;
+  border-bottom: 2px solid red;
 }
 
 .project {
   font-family: "Work Sans", sans-serif;
   /* display: grid; */
-  width: 60%;
+  width: 70%;
   /* padding-top: 2.5rem; */
   margin: 1rem;
   grid-template-columns: repeat(2, 1fr);
@@ -88,6 +101,7 @@ h1 {
 
 .social .button a:hover {
   color: red !important;
+  border-bottom: 2px solid red;
 }
 
 .contact p {
@@ -98,9 +112,14 @@ h1 {
   margin: 0 0 0 1rem;
 }
 
+.projectClass {
+  font-size: 1.5rem;
+}
+
 .contact h1, .contact img {
   display: inline;
 }
+
 .about img {
   max-width: 100%;
   margin: 0 140px 0 0;
@@ -119,17 +138,23 @@ h1 {
   display: inline;
 }
 
-.projects img {
+/* .projects img {
   width: 25%;
   display: inline;
-}
+} */
 
 .projectsContainer {
+  font-size: 1.25rem;
   margin: 2rem 0;
 }
 
 .projectsContainer a {
   margin: 0 0 0 .5rem;
+}
+
+.projectsContainer a:hover {
+  color: red;
+  border-bottom: 2px solid red;
 }
 
 .nav {
@@ -157,10 +182,10 @@ li a {
   color: black;
 }
 
-.project img {
+/* .project img {
   margin: 0 0 1rem 0;
   width: 50%;
-}
+} */
 
 @keyframes "blink" {
   from,

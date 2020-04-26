@@ -26,14 +26,23 @@ function Project(data) {
         dangerouslySetInnerHTML={{
           __html: replaceTextWithLinks(thing.description),
         }}
-      ></div>
+      >
+      </div>
     ) : null;
   });
+
+  const image = projectData.map((item) => {
+    return item.url === url ? (
+    <img src={item.img}></img>
+    ) : null;
+  });
+
   return (
     <>
       <div className="project">
         <Nav />
         {description}
+        {image}
         <Social />
       </div>
     </>
