@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Project from "./components/project";
 import {
-  Router,
+  HashRouter,
   Switch,
   Route,
   Redirect,
   Link,
   useParams,
-  withRouter,
+  withRouter
 } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import About from "./components/about";
@@ -56,7 +56,7 @@ const ProjectContext = React.createContext(projects);
 function App() {
   return (
     <div className="App">
-      <Router history={history} basename={`${process.env.PUBLIC_URL}/`}>
+      <HashRouter history={history} basename={`${process.env.PUBLIC_URL}/`}>
         <Switch>
           <Route exact path="/" component={Landing} />
           <Route
@@ -65,11 +65,11 @@ function App() {
           />
           <Route path="/about" component={About} />
           <Route
-            path={`${process.env.PUBLIC_URL}/:url`}
+            path='/:url'
             render={(props) => <Project {...props} projectsData={projects} />}
           />
         </Switch>
-      </Router>
+      </HashRouter>
     </div>
   );
 }
