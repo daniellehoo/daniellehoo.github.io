@@ -9,16 +9,6 @@ h1 {
   margin: 1rem;
 }
 
-.blinking-cursor {
-  font-weight: 100;
-  color: #2e3d48;
-  -webkit-animation: 1s blink step-end infinite;
-  -moz-animation: 1s blink step-end infinite;
-  -ms-animation: 1s blink step-end infinite;
-  -o-animation: 1s blink step-end infinite;
-  animation: 1s blink step-end infinite;
-}
-
 .about {
   display: flex;
   flex-direction: column;
@@ -177,7 +167,6 @@ border-bottom: 2px solid red;
   list-style-type: none;
 }
 
-
 li a {
   text-decoration: none;
   color: black;
@@ -185,21 +174,6 @@ li a {
 
 .back a {
   margin: 2rem 0;
-}
-
-/* .project img {
-  margin: 0 0 1rem 0;
-  width: 50%;
-} */
-
-@keyframes "blink" {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: black;
-  }
 }
 
 .homeButton img{
