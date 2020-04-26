@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "5f02beb191195fe76a1f",
-    "url": "/static/css/main.eb6534ff.chunk.css"
+    "revision": "facac524743b0883b2ed",
+    "url": "/static/css/main.dee5be06.chunk.css"
   },
   {
-    "revision": "5f02beb191195fe76a1f",
+    "revision": "facac524743b0883b2ed",
     "url": "/static/js/main.b13ff031.chunk.js"
   },
   {
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/static/media/blue_fish.d24dc50d.png"
   },
   {
-    "revision": "7a8301276ae6bac5dd3b55ac9eaad92c",
+    "revision": "dd50ac3f2810401c7e1360fbff331786",
     "url": "/index.html"
   }
 ];
