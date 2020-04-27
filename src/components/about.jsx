@@ -15,7 +15,7 @@ function about() {
         <img src={soy} />
       </div>
       <p>brooklyn, NY resident</p>
-      <p>software engineer</p>
+      <p>software engineer working in javascript and react</p>
       <p>former Museum of Modern Art (MoMA) employee</p>
       <p>interest in contemporary art, design, & web development</p>
       <p>occasional runner, wanderer & Canon G16 user</p>

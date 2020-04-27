@@ -6,7 +6,7 @@ import fish from "../assets/blue_fish.png";
 function projects(props) {
   const projectsData = props.projectsData;
   const grid = projectsData.map(project => (
-    <div className={`project id_${project.id}`} key={project.id}>
+    <div className={`projectList`} key={project.id}>
         <a href={`#/${project.url}`}>
         {project.title}
       </a>

@@ -33,7 +33,7 @@ const projects = [
     url: "our_childrens_trust",
     img: "https://live.staticflickr.com/65535/49592718198_6760f8c00d_b.jpg",
 
-    description: "Our Children's Trust is the first civil litigation for climate change accountability in U.S. History. Working as part of the SITU Research team, I built a platform that was to be used for evidentiary presentation in court.",
+    description: "Our Children's Trust is the first civil litigation for climate change accountability in U.S. History. Working as part of the SITU Research team, I built a platform using Leaflet.js that was to be used for evidentiary presentation in court.",
   },
   {
     id: 2,
