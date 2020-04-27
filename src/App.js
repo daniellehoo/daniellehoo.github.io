@@ -25,7 +25,7 @@ const projects = [
     url: "chinatown_usa",
     img: "https://live.staticflickr.com/65535/49593430952_712dc0cce1_b.jpg",
     description:
-      "Chinatown, USA was inspired by The Chinese in America by Iris Chang and the work of American conceptual artist, John Baldessari. It is the digital photographic capturing of Chinese own businesses in North America with minimal geometric interventions.",
+      "Chinatown, USA was inspired by The Chinese in America by Iris Chang and the work of American conceptual artist, John Baldessari. It is the digital photographic capturing of Chinese owned businesses in North America with minimal geometric interventions.",
   },
   {
     id: 1,
@@ -33,7 +33,7 @@ const projects = [
     url: "our_childrens_trust",
     img: "https://live.staticflickr.com/65535/49592718198_6760f8c00d_b.jpg",
 
-    description: "our childreen's trustdfssdf ",
+    description: "Our Children's Trust is the first civil litigation for climate change accountability in U.S. History. Working as part of the SITU Research team, I built a platform that was to be used for evidentiary presentation in court.",
   },
   {
     id: 2,
