@@ -47,7 +47,7 @@ const projects = [
     title: "Amnesty International",
     url: "amnesty_international",
     img: "https://live.staticflickr.com/65535/49593280613_513f9fe243_b.jpg",
-    description: "A new visual investigation by Amnesty International and SITU Research shows demonstrates that Iraqi security forces intended to kill or severely maim dozens of protesters when they fired military-style grenades directly into crowds on the streets of Baghdad from October 2019 onwards. I contributed research and narrative guidance to this project while working at SITU.",
+    description: "A new visual investigation by Amnesty International and SITU Research shows demonstrates that Iraqi security forces intended to kill or severely maim dozens of protesters when they fired military-style grenades directly into crowds on the streets of Baghdad from October 2019 onwards.",
   },
 ];
 
