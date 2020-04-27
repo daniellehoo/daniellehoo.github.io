@@ -1,3 +1,4 @@
+/* eslint-disable no-fallthrough */
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import Nav from "./nav";
@@ -9,6 +10,11 @@ function replaceTextWithLinks(project, text) {
   let regexSitu = /SITU Research/g;
   let regexLeaflet = /Leaflet.js/g;
   let regexOurChildrensTrust = /Our Children's Trust/g;
+  let GIEI = /GIEI/g;
+  let EAAF = /EAAF/g;
+  let regexNicaragua = /digital platform/g;
+  let regexAmnesty = /Amnesty International/g;
+  let regexVisualInvestigation = /visual investigation/g;
 
   switch (project) {
     case "Chinatown USA":
@@ -33,6 +39,38 @@ function replaceTextWithLinks(project, text) {
         )
         .trim();
       break;
+    case "Nicaragua":
+      linkedText = text
+        .replace(
+          regexNicaragua,
+          "<a href='http://gieinicaragua-cartografia-violencia.org/' target='_blank'>digital platform</a>"
+        )
+        .replace(EAAF, "<a href='https://eaaf.org' target='_blank'>EAAF</a>")
+        .replace(
+          GIEI,
+          "<a href='https://gieinicaragua.org/en' target='_blank'>GIEI</a>"
+        )
+        .replace(
+          regexSitu,
+          "<a href='https://situ.nyc/research' target='_blank'>SITU Research</a>"
+        )
+        .trim();
+      break;
+    case "Amnesty International":
+      linkedText = text
+        .replace(
+          regexSitu,
+          "<a href='https://situ.nyc/research' target='_blank'>SITU Research</a>"
+        )
+        .replace(
+          regexAmnesty,
+          "<a href='https://www.amnesty.org/en/' target='_blank'>Amnesty International</a>"
+        )
+        .replace(
+          regexVisualInvestigation,
+          "<a href='https://teargas.amnesty.org/iraq/' target='_blank'>visual investigation</a>"
+        )
+        .trim();
     default:
       console.log("");
       break;

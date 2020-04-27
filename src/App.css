@@ -111,7 +111,7 @@ border-bottom: 2px solid red;
   font-size: 1.5rem;
 }
 
-.contact h1, .contact img {
+.about h1, .projects h1, .contact img {
   display: inline;
 }
 
@@ -127,10 +127,6 @@ border-bottom: 2px solid red;
   /* max-width: 100px; */
   max-width: 100%;
   right: 10%;
-}
-
-.projects h1 {
-  display: inline;
 }
 
 .projectsContainer {

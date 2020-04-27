@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Nav from "./nav";
 import Social from "./social_buttons";
-import fish from "../assets/blue_fish.png";
+import fish from "../assets/pigeon.png";
 
 function projects(props) {
   const projectsData = props.projectsData;
