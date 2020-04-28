@@ -39,7 +39,7 @@ const projects = [
     title: "Nicaragua",
     url: "nicaragua",
     img: "https://live.staticflickr.com/65535/49593769191_4de582e8d0_b.jpg",
-    description: "I worked with a team of developers and designers from SITU Research and in partnership with EAAF and GIEI, to produce an event reconstruction and digital platform to investigate violent and, in some cases, lethal clashes between protesters and government forces that took place in Nicaragua during the spring of 2018.",
+    description: "I worked on a team of developers and designers from SITU Research and in partnership with EAAF and GIEI, to produce an event reconstruction and digital platform to investigate violent and, in some cases, lethal clashes between protesters and government forces in Nicaragua during the spring of 2018.",
   },
 
   {

@@ -111,9 +111,9 @@ border-bottom: 2px solid red;
   font-size: 1.5rem;
 }
 
-.about h1, .projects h1, .contact img {
+/* .about h1, .projects h1, .contact img {
   display: inline;
-}
+} */
 
 .about img {
   max-width: 100%;
@@ -128,6 +128,11 @@ border-bottom: 2px solid red;
   max-width: 100%;
   right: 10%;
 }
+
+img#fish {
+  width: 40%;
+}
+
 
 .projectsContainer {
   font-size: 1.25rem;
