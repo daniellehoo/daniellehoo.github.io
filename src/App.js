@@ -31,7 +31,7 @@ const projects = [
     id: 1,
     title: "Our Children's Trust",
     url: "our_childrens_trust",
-    img: "https://live.staticflickr.com/65535/49592718198_6760f8c00d_b.jpg",
+    img: "https://live.staticflickr.com/65535/49830965857_2bdd7ff303_h.jpg",
     description: "Our Children's Trust is the first civil litigation for climate change accountability in U.S. History. Working as part of the SITU Research team, I built an interactive platform using Leaflet.js that was to be used for evidentiary presentation in court.",
   },
   {
@@ -47,7 +47,7 @@ const projects = [
     title: "Amnesty International",
     url: "amnesty_international",
     img: "https://live.staticflickr.com/65535/49593280613_513f9fe243_b.jpg",
-    description: "A new visual investigation by Amnesty International and SITU Research shows demonstrates that Iraqi security forces intended to kill or severely maim dozens of protesters when they fired military-style grenades directly into crowds on the streets of Baghdad from October 2019 onwards.",
+    description: "A new visual investigation by Amnesty International and SITU Research demonstrates that Iraqi security forces intended to kill or severely maim dozens of protesters when they fired military-style grenades directly into crowds on the streets of Baghdad from October 2019 onwards. I contributed research and narrative construction to this project.",
   },
 ];
 
