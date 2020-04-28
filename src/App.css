@@ -7,7 +7,7 @@ body {
 h1 {
   font-family: "Work Sans", sans-serif;
   font-size: 5rem;
-  margin: 1rem;
+   margin: 2rem;
 }
 
 .about {
@@ -78,7 +78,7 @@ border-bottom: 2px solid red;
   font-weight: 800;
   background-color: rgba(0,0,0,0);
   border-width: 0;
-  margin: 1rem;
+  margin: 2rem;
 }
 .header input:focus {
   border-width: 0;
@@ -104,7 +104,7 @@ border-bottom: 2px solid red;
 }
 
 .about p {
-  margin: .5rem 1rem;
+  margin: .5rem 2rem;
 }
 
 .projectClass {
@@ -140,7 +140,7 @@ img#fish {
 }
 
 .projectsContainer a {
-  margin: 0 0 0 .5rem;
+  margin: 0 0 0 1.5rem;
 }
 
 .projectsContainer a:hover {
