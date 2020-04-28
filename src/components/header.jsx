@@ -8,7 +8,7 @@ function moveCaretAtEnd(e) {
 }
 
 function header () {
-  const [name, setName] = useState("Danielle Hoo &#013; &#010 Danielle Hoo");
+  const [name, setName] = useState("Danielle Hoo");
   return (
     <div className="header">
       <form>
