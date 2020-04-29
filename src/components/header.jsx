@@ -14,9 +14,6 @@ function header () {
       <form>
         <input
           type="text"
-          rows="10"
-          id="lname"
-          name="lname"
           value={name}
           onChange={(e) => setName(e.target.value)}
           autoFocus
