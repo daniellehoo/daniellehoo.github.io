@@ -12,7 +12,7 @@ function header () {
   return (
     <div className="header">
       <form>
-        <textarea
+        <input
           type="text"
           rows="10"
           id="lname"
@@ -21,7 +21,7 @@ function header () {
           onChange={(e) => setName(e.target.value)}
           autoFocus
           onFocus={moveCaretAtEnd}
-        ></textarea>
+        ></input>
       </form>
     </div>
   );
