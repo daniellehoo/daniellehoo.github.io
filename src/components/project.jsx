@@ -15,6 +15,10 @@ function replaceTextWithLinks(project, text) {
   let regexNicaragua = /digital platform/g;
   let regexAmnesty = /Amnesty International/g;
   let regexVisualInvestigation = /visual investigation/g;
+  let p5 = /p5/g;
+  let jesse = /Jesse Chen/g;
+  let playground = /playground/g;
+  let codebase = /here/g;
 
   switch (project) {
     case "Chinatown USA":
@@ -69,6 +73,23 @@ function replaceTextWithLinks(project, text) {
         .replace(
           regexVisualInvestigation,
           "<a href='https://teargas.amnesty.org/iraq/' target='_blank'>visual investigation</a>"
+        )
+        .trim();
+        break;
+    case "VaporJong":
+      linkedText = text
+        .replace(p5, "<a href='https://p5js.org/' target='_blank'>p5</a>")
+        .replace(
+          jesse,
+          "<a href='https://github.com/jessechen' target='_blank'>Jesse Chen</a>"
+        )
+        .replace(
+          playground,
+          "<a href='https://daniellehoo.com/vaporJong/vaporJong.html' target='_blank'>playground</a>"
+        )
+        .replace(
+          codebase,
+          "<a href='https://github.com/daniellehoo/vaporJong' target='_blank'>here</a>"
         )
         .trim();
     default:

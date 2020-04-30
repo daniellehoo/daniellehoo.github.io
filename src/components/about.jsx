@@ -27,7 +27,7 @@ function about() {
 
       <p>
         contact:
-        <a href="mailto:daniellem.hoo@gmail.com?subject=Hello!">email</a>
+        <a id="contact" href="mailto:daniellem.hoo@gmail.com?subject=Hello!">email</a>
       </p>
       <Social />
     </div>
