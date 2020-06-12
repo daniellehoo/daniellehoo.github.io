@@ -51,8 +51,17 @@ const projects = [
     description:
       "Our Children's Trust is the first civil litigation for climate change accountability in U.S. History. Working as part of the SITU Research team, I built an interactive platform using Leaflet.js for evidentiary presentation in court."
   },
-  {
+    {
     id: 4,
+    title: "Tear Gas",
+    url: 'tear_gas',
+    img: 'https://live.staticflickr.com/65535/49998485043_c075f87203_b.jpg',
+    img_link: 'https://teargas.amnesty.org/#how-it-works',
+    description:
+      "Working with SITU Research in partnership with Amnesty International, I conducted extensive research for the production of this video shedding light on tear gas as a 'less lethal' minition used to supress peaceful demonstrations, worldwide. "
+  },
+  {
+    id: 5,
     title: 'VaporJong',
     url: 'vapor_jong',
     img: 'https://live.staticflickr.com/65535/49837809302_ee6e014fe1_h.jpg',

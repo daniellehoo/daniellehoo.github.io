@@ -53,6 +53,7 @@ border-bottom: 2px solid red;
 
 .project img {
   max-width: 90%;
+  margin-bottom: 1.5rem;
 }
 
 .nav a:hover {

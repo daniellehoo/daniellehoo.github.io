@@ -15,6 +15,7 @@ function replaceTextWithLinks(project, text) {
   let regexNicaragua = /digital platform/g;
   let regexAmnesty = /Amnesty International/g;
   let regexVisualInvestigation = /visual investigation/g;
+  let video = /video/g;
   let p5 = /p5/g;
   let jesse = /Jesse Chen/g;
   let playground = /playground/g;
@@ -75,7 +76,23 @@ function replaceTextWithLinks(project, text) {
           "<a href='https://teargas.amnesty.org/iraq/' target='_blank'>visual investigation</a>"
         )
         .trim();
-        break;
+      break;
+    case "Tear Gas":
+      linkedText = text
+        .replace(
+          regexSitu,
+          "<a href='https://situ.nyc/research' target='_blank'>SITU Research</a>"
+        )
+        .replace(
+          regexAmnesty,
+          "<a href='https://www.amnesty.org/en/' target='_blank'>Amnesty International</a>"
+        )
+        .replace(
+          video,
+          "<a href='https://teargas.amnesty.org/#how-it-works' target='_blank'>video</a>"
+        )
+        .trim();
+      break;
     case "VaporJong":
       linkedText = text
         .replace(p5, "<a href='https://p5js.org/' target='_blank'>p5</a>")
@@ -120,12 +137,13 @@ function Project(data) {
     return item.url === url ? <img src={item.img}></img> : null;
   });
 
+
   return (
     <>
       <div className="project">
         <Nav />
-        {description}
         {image}
+        {description}
         <div className="back">
           <a href="#/Projects">{`<< Back to Projects`}</a>
         </div>
