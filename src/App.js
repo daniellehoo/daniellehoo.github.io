@@ -58,7 +58,7 @@ const projects = [
     img: 'https://live.staticflickr.com/65535/49998485043_c075f87203_b.jpg',
     img_link: 'https://teargas.amnesty.org/#how-it-works',
     description:
-      "Working with SITU Research in partnership with Amnesty International, I conducted extensive research for the production of this video shedding light on tear gas as a 'less lethal' minition used to supress peaceful demonstrations, worldwide. "
+      "Working with SITU Research in partnership with Amnesty International, I conducted research for the production of this video shedding light on tear gas as a 'less lethal' munition used to supress peaceful demonstrations, worldwide. "
   },
   {
     id: 5,
