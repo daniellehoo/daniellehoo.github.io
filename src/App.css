@@ -7,7 +7,7 @@ body {
 h1 {
   font-family: "Work Sans", sans-serif;
   font-size: 5rem;
-   margin: 2rem;
+  margin: 2rem;
 }
 
 .about {
@@ -30,25 +30,25 @@ a#contact {
 }
 
 .projectList {
-  margin: .5em;
+  margin: 0.5em;
 }
-
 
 .projectClass a {
   margin: 0;
   color: red;
 }
 
-.projectClass a:hover, .about a:hover, .project a:hover {
-color: red;
-border-bottom: 2px solid red;
+.projectClass a:hover,
+.about a:hover,
+.project a:hover {
+  color: red;
+  border-bottom: 2px solid red;
 }
 
 .projectClass {
   margin: 0 0 2rem 0;
   max-width: 90%;
   font-size: 1.25rem;
-
 }
 
 .project img {
@@ -84,7 +84,7 @@ border-bottom: 2px solid red;
   font-family: "Work Sans", sans-serif;
   font-size: 5rem;
   font-weight: 800;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   border-width: 0;
   margin: 2rem;
 }
@@ -112,16 +112,16 @@ border-bottom: 2px solid red;
 }
 
 .about p {
-  margin: .5rem 2rem;
+  margin: 0.5rem 2rem;
 }
 
 .about img {
   max-width: 100%;
   margin: 0 140px 0 0;
-
 }
 
-.about img, img#fish {
+.about img,
+img#fish {
   position: absolute;
   width: 20%;
   max-width: 100%;
@@ -131,7 +131,6 @@ border-bottom: 2px solid red;
 img#fish {
   width: 40%;
 }
-
 
 .projectsContainer {
   font-size: 1.25rem;
@@ -166,7 +165,6 @@ img#fish {
   list-style-type: none;
 }
 
-
 li a {
   text-decoration: none;
   color: black;
@@ -175,7 +173,6 @@ li a {
 a.active {
   color: red;
   border-bottom: 2px solid red;
-
 }
 
 .back {
@@ -186,9 +183,53 @@ a.active {
   margin: 2rem 0;
 }
 
-.homeButton img{
+.homeButton img {
   position: absolute;
   left: 0;
   top: 0;
   width: 10%;
+}
+
+/* responsive design  */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  body {
+    /* max-height: 100vh; */
+    /* max-width: 100vw; */
+    overflow: hidden;
+  }
+
+  .header input, h1  {
+    margin: 1rem 3rem;
+    font-size: 2.5rem;
+  }
+
+  .projectList a, .about p {
+    font-size: 1rem;
+    margin: 1rem 3rem;
+  }
+
+  img#fish, .about img  {
+    display: none;
+  }
+
+  .model {
+    /* display: flex; */
+    /* width: 400px; */
+    height: 700px;
+  }
+
+  .nav {
+    right: -37vh;
+  }
+
+  .nav li {
+    margin: .5rem;
+  }
+
+  .social {
+    left: calc(50% - 130px);
+    font-size: 1.1rem;
+    width: 100px;
+  }
 }
