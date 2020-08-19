@@ -1,24 +1,24 @@
 import React, { useState } from "react";
-import { Link, NavLink, useHistory } from "react-router-dom";
+import { Link, NavLink} from "react-router-dom";
 import Home from "./homeButton";
 
 function Nav() {
-      const history = useHistory();
+  const [active, setActive] = useState(false);
 
   return (
     <div className="nav">
       <nav>
         <ul>
-          <li>
+          <li className={active} onClick={() => setActive()}>
             <Home />
           </li>
-          <li>
+          <li className={active} onClick={() => setActive()}>
             <NavLink to="/projects">projects</NavLink>
           </li>
-          <li>
+          <li className={active} onClick={() => setActive()}>
             <a href="https://daniellehoo.github.io/blog/posts">blog</a>
           </li>
-          <li>
+          <li className={active} onClick={() => setActive()}>
             <NavLink to="/about">about</NavLink>
           </li>
         </ul>
@@ -26,10 +26,5 @@ function Nav() {
     </div>
   );
 }
-
-// function onClick(history, ) {
-// history.push('/')
-// }
-
 
 export default Nav;

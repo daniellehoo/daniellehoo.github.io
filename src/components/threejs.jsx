@@ -165,7 +165,7 @@ this.start()
   render() {
     return (
       <div className="model"
-        style={{ width: '100vw', height: '100vh' }}
+        style={{ maxWidth: '100vw', minHeight: '100vh', margin: '0 auto' }}
         ref={(mount) => { this.mount = mount }}
       />
     )
