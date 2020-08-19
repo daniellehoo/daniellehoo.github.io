@@ -1,8 +1,8 @@
 /* eslint-disable no-fallthrough */
-import React, { useState } from "react";
-import { useParams } from "react-router-dom";
-import Nav from "./nav";
-import Social from "./social_buttons";
+import React, {useState} from 'react';
+import {useParams} from 'react-router-dom';
+import Nav from './nav';
+import Social from './social_buttons';
 
 function replaceTextWithLinks(project, text) {
   let linkedText;
@@ -22,7 +22,7 @@ function replaceTextWithLinks(project, text) {
   let codebase = /here/g;
 
   switch (project) {
-    case "Chinatown USA":
+    case 'Chinatown USA':
       linkedText = text.replace(
         regexChinatown,
         "<a href='https://www.penguinrandomhouse.com/books/288096/the-chinese-in-america-by-iris-chang/' target='_blank'>The Chinese in America</a>"
@@ -44,7 +44,7 @@ function replaceTextWithLinks(project, text) {
         )
         .trim();
       break;
-    case "Nicaragua":
+    case 'Nicaragua':
       linkedText = text
         .replace(
           regexNicaragua,
@@ -61,7 +61,7 @@ function replaceTextWithLinks(project, text) {
         )
         .trim();
       break;
-    case "Amnesty International":
+    case 'Amnesty International':
       linkedText = text
         .replace(
           regexSitu,
@@ -77,7 +77,7 @@ function replaceTextWithLinks(project, text) {
         )
         .trim();
       break;
-    case "Tear Gas":
+    case 'Tear Gas':
       linkedText = text
         .replace(
           regexSitu,
@@ -93,7 +93,7 @@ function replaceTextWithLinks(project, text) {
         )
         .trim();
       break;
-    case "VaporJong":
+    case 'VaporJong':
       linkedText = text
         .replace(p5, "<a href='https://p5js.org/' target='_blank'>p5</a>")
         .replace(
@@ -110,7 +110,7 @@ function replaceTextWithLinks(project, text) {
         )
         .trim();
     default:
-      console.log("");
+      console.log('');
       break;
   }
 
@@ -118,7 +118,7 @@ function replaceTextWithLinks(project, text) {
 }
 
 function Project(data) {
-  let { url } = useParams();
+  let {url} = useParams();
   let projectData = data.projectsData;
 
   const description = projectData.map((thing) => {
@@ -137,18 +137,19 @@ function Project(data) {
     return item.url === url ? <img src={item.img}></img> : null;
   });
 
-
   return (
     <>
       <div className="project">
         <Nav />
-        {image}
-        {description}
+        <div className="project-content">
+          {image}
+          {description}
+        </div>
         <div className="back">
           <a href="#/Projects">{`<< Back to Projects`}</a>
         </div>
-        <Social />
       </div>
+      <Social />
     </>
   );
 }

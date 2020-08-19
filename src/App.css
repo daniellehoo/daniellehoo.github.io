@@ -1,14 +1,14 @@
-/* Global */
+/* --------- Global ---------- */
 * {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   margin: 0;
 }
 
-/* Header */
+/* ------------ Header ---------- */
 .header {
   position: absolute;
   top: 0;
@@ -17,10 +17,10 @@ body {
 }
 
 .header input {
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 4rem;
   font-weight: 800;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   border-width: 0;
   margin: 1rem;
 }
@@ -31,21 +31,64 @@ body {
 }
 
 h1 {
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 4rem;
   margin: 1rem;
 }
 
+/* --------- About --------- */
 .about {
   display: flex;
   flex-direction: column;
 }
 
+.about img {
+  max-width: 100%;
+  margin: 0 140px 0 0;
+}
+
+.about p {
+  margin-left: 1rem;
+}
+
+.about img,
+img#fish {
+  position: absolute;
+  width: 20%;
+  max-width: 100%;
+  right: 10%;
+}
+
+img#fish {
+  width: 40%;
+}
+
+a#contact {
+  color: red;
+}
+
+.contact p {
+  margin: 2rem;
+}
+
+/* --------- Projects ---------- */
+.projectsContainer {
+  font-size: 1.25rem;
+  margin: 3rem 0;
+ display: inline-flex;
+  flex-direction: column;
+}
+
+.projectList {
+  margin:.25rem 0;
+}
+
 .projects a,
 .project a,
 .about a,
-.landing a {
-  font-family: "Work Sans", sans-serif;
+.landing a,
+.social-footer a {
+  font-family: 'Work Sans', sans-serif;
   color: black;
   text-decoration: none;
   margin: 1rem;
@@ -57,8 +100,7 @@ h1 {
 }
 
 .projectClass a:hover,
-.about a:hover,
-.project a:hover {
+a#contact:hover, .back a:hover, .projects a:hover {
   color: red;
   border-bottom: 2px solid red;
 }
@@ -74,13 +116,8 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
-.nav a:hover {
-  color: red;
-  border-bottom: 2px solid red;
-}
-
 .project {
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   width: 50%;
   margin: 1.5rem;
 }
@@ -91,58 +128,7 @@ h1 {
   margin: 1rem;
 }
 
-.social-footer {
-  position: fixed;
-  width: 325px;
-  display: flex;
-  left: calc(50% - 162.5px);
-  bottom: 50px;
-  font-size: 1.5rem;
-}
-
-.social-footer .button a:hover {
-  color: red !important;
-  border-bottom: 2px solid red;
-}
-
-.contact p {
-  margin: 2rem;
-}
-
-.about p {
-  margin: 0.5rem 2rem;
-}
-
-.about img {
-  max-width: 100%;
-  margin: 0 140px 0 0;
-}
-
-.about img,
-img#fish {
-  position: absolute;
-  width: 20%;
-  max-width: 100%;
-  right: 10%;
-}
-
-img#fish {
-  width: 40%;
-}
-
-.projectsContainer {
-  font-size: 1.25rem;
-  margin: 3rem 0;
-}
-
-.projectsContainer a {
-  margin: 0 0 0 1.5rem;
-}
-
-.projectsContainer a:hover {
-  color: red;
-  border-bottom: 2px solid red;
-}
+/* --------- Nav ---------- */
 
 .nav {
   display: flex;
@@ -172,6 +158,10 @@ a.active {
   color: red;
   border-bottom: 2px solid red;
 }
+.nav a:hover {
+  color: red;
+  border-bottom: 2px solid red;
+}
 
 .back {
   margin: 2rem 0;
@@ -188,32 +178,52 @@ a.active {
   width: 10%;
 }
 
+/* --------- Footer ---------- */
+
+.social-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 1.5rem;
+  background-color: rgba(183, 215, 69, 0.5);
+  margin: 0;
+  padding: 1rem;
+}
+
+.social-footer a {
+  margin: .5rem;
+}
+
+.social-footer .button a:hover {
+  color: red !important;
+  border-bottom: 2px solid red;
+}
+
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    max-height: 100vh;
+    max-width: 100vw;
+  }
 
-    body {
-      max-height: 100vh;
-      max-width: 100vw;
-    }
+  h1,
+  .header input {
+    font-size: 2rem;
+  }
 
-    h1, .header input {
-      font-size: 2rem;
-    }
+  .nav {
+    top: 0;
+    right: calc(-45%);
+    width: 250px;
+    /* width: 55%; */
+  }
 
-    .nav {
-      top: 0;
-      right: calc(-45%);
-      width: 250px;
-      /* width: 55%; */
-    }
-
-    .social-footer {
-      bottom: 0;
-    }
-
+  .social-footer {
+    bottom: 0;
+  }
 }

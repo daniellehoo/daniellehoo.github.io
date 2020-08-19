@@ -94,4 +94,3 @@ function App () {
 }
 
 export default withRouter(App)
-// <Project data={projects} />
