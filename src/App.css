@@ -212,9 +212,14 @@ a.active {
     max-width: 90vw;
   }
 
-  h1,
+  h1, .header input {
+    font-size: 3rem;
+  }
+
   .header input {
-    font-size: 2rem;
+    position: fixed;
+    top: 25%;
+    left: 0;
   }
 
   .nav {
