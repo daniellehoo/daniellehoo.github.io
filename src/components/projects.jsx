@@ -12,13 +12,15 @@ function projects(props) {
   ));
 
   return (
+    <>
     <div className="projects">
-      <Nav />
       <h1>Projects</h1>
       <img id="fish" src={fish} />
       <div className="projectsContainer">{grid}</div>
       <Social />
     </div>
+      <Nav />
+    </>
   );
 }
 

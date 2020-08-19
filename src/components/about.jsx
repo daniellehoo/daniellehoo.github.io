@@ -6,9 +6,10 @@ import Social from "./social_buttons";
 
 function about() {
   return (
+    <>
+        <Nav />
     <div className="about">
       <div>
-        <Nav />
       </div>
       <h1>About</h1>
       <div>
@@ -28,6 +29,7 @@ function about() {
       </p>
       <Social />
     </div>
+    </>
   );
 }
 

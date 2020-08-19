@@ -139,8 +139,8 @@ function Project(data) {
 
   return (
     <>
-      <div className="project">
         <Nav />
+      <div className="project">
         <div className="project-content">
           {image}
           {description}
