@@ -48,7 +48,7 @@ function social() {
     </div>
   ));
 
-  return <div className="social" key="1">{grid}</div>;
+  return <div className="social-footer" key="1">{grid}</div>;
 }
 
 export default social;
