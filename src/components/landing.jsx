@@ -6,12 +6,14 @@ import Social from './social_buttons';
 
 function landing() {
   return (
-    <div className="landing">
+    <>
       <Nav />
+    <div className="landing">
       <Header />
       <Model />
       <Social />
     </div>
+    </>
   );
 }
 
