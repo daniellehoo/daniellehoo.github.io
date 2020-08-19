@@ -76,12 +76,12 @@ a#contact {
 .projectsContainer {
   font-size: 1.25rem;
   margin: 3rem 0;
- display: inline-flex;
+  display: inline-flex;
   flex-direction: column;
 }
 
 .projectList {
-  margin:.25rem 0;
+  margin: 0.25rem 0;
 }
 
 .projects a,
@@ -101,7 +101,9 @@ a#contact {
 }
 
 .projectClass a:hover,
-a#contact:hover, .back a:hover, .projects a:hover {
+a#contact:hover,
+.back a:hover,
+.projects a:hover {
   color: red;
   border-bottom: 2px solid red;
 }
@@ -195,7 +197,7 @@ a.active {
 }
 
 .social-footer a {
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
 .social-footer .button a:hover {
@@ -212,7 +214,8 @@ a.active {
     max-width: 100vw;
   }
 
-  h1, .header input {
+  h1,
+  .header input {
     font-size: 3rem;
   }
 
@@ -220,26 +223,34 @@ a.active {
     /* position: fixed;
     top: 25%;
     left: 0; */
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
   }
 
   .nav {
     display: flex;
-   position: initial;
-   transform: none;
+    transform: none;
+    position: absolute;
+    margin: 1rem;
+    width: 100%;
+    top: initial;
+    right: initial;
+    bottom: 5%;
+    height: 75px;
+    background-color: rgba(183, 215, 69, 0.5);
   }
-  
+
   .nav ul {
     text-align: center;
     align-self: center;
     margin: 0;
   }
-  
+
   .nav li {
-    margin: .25rem 0;
+    margin: 0.25rem 0;
   }
 
-  img#fish, img#soy {
+  img#fish,
+  img#soy {
     display: none;
   }
 

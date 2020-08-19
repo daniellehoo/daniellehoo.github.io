@@ -7,8 +7,8 @@ import Social from './social_buttons';
 function landing() {
   return (
     <div className="landing">
-      <Header />
       <Nav />
+      <Header />
       <Model />
       <Social />
     </div>
