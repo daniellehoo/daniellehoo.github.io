@@ -264,9 +264,18 @@ a.active {
   }
 
   .project {
+    /* margin-bottom: 10rem; */
+    /* max-height: calc(100% - 20 rem); */
+    height: calc(100vh - 10rem);
+    width: 100%;
+    margin: 0;
+    overflow-y: scroll;
+  }
+
+  /* .project {
     margin: 0;
     width: 100%;
-  }
+  } */
 
   .social-footer {
     bottom: 0;
