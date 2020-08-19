@@ -20,10 +20,7 @@ function about() {
       <p>interest in contemporary art, design, & web development</p>
       <p>occasional distance runner, wanderer & Canon G16 user</p>
 
-      <div className="spacer"></div>
-      <br></br>
-      <br></br>
-      <br></br>
+      <div className="spacer"></div>      
 
       <p>
         contact:
