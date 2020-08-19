@@ -12,7 +12,7 @@ function about() {
       </div>
       <h1>About</h1>
       <div>
-        <img src={soy} />
+        <img id="soy" src={soy} />
       </div>
       <p>brooklyn, NY resident</p>
       <p>software engineer working in javascript and react</p>
