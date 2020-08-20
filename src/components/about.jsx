@@ -12,9 +12,6 @@ function about() {
       <div>
       </div>
       <h1>About</h1>
-      <div>
-        <img id="soy" src={soy} />
-      </div>
       <p>brooklyn, NY resident</p>
       <p>software engineer working in javascript and react</p>
       <p>former Museum of Modern Art (MoMA) employee</p>
@@ -27,6 +24,9 @@ function about() {
         contact:
         <a id="contact" href="mailto:daniellem.hoo@gmail.com?subject=Hello!">email</a>
       </p>
+      <div>
+        <img id="soy" src={soy} />
+      </div>
       <Social />
     </div>
     </>

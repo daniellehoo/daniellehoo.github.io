@@ -41,25 +41,27 @@ h1 {
   flex-direction: column;
 }
 
-.about img {
+/* .about img {
   max-width: 100%;
   margin: 0 140px 0 0;
-}
+} */
 
 .about p {
   margin-left: 1rem;
 }
 
 .about img,
-img#fish {
-  position: absolute;
-  width: 20%;
-  max-width: 100%;
-  right: 10%;
+/* .projectsContainer img, */
+.projects img#fish {
+position: fixed;
+right: 0;
+bottom: 5rem;
+width: 200px;
+margin: 0 100px 0 0;
 }
 
-img#fish {
-  width: 40%;
+.projects img#fish {
+  width: 400px;
 }
 
 a#contact {
@@ -133,16 +135,17 @@ a#contact:hover,
 
 .nav {
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 15em;
-  right: -11em;
+  right: -12em;
   color: black;
   transform: rotate(90deg);
   width: 500px;
 }
 
-.nav ul {
+ul {
   display: inline-flex;
+  margin: 0 0 0 0;
 }
 
 .nav li {
@@ -197,6 +200,7 @@ a.active {
 
 .social-footer a {
   margin: 0.5rem;
+  font-size: 1.25rem;
 }
 
 .social-footer .button a:hover {
@@ -218,14 +222,8 @@ a.active {
     font-size: 2.25rem;
   }
 
-  .header input {
-    /* position: fixed;
-    top: 25%;
-    left: 0; */
-    /* margin-top: 3rem; */
-  }
-
-.nav, nav {
+  .nav,
+  nav {
     display: flex;
     transform: none;
     position: fixed;
@@ -235,10 +233,10 @@ a.active {
     bottom: 4rem;
     height: 75px;
   }
-  
+
   .nav {
     background-color: rgba(183, 215, 69, 0.5);
-}
+  }
 
   .nav img {
     margin: 1rem 1rem 1rem 3rem;
@@ -259,7 +257,8 @@ a.active {
     display: none;
   }
 
-  .project-content, .back {
+  .project-content,
+  .back {
     margin: 1rem;
   }
 
@@ -272,12 +271,14 @@ a.active {
     overflow-y: scroll;
   }
 
-  /* .project {
-    margin: 0;
-    width: 100%;
-  } */
-
   .social-footer {
     bottom: 0;
+  }
+}
+
+@media only screen and (min-device-width: 500px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) {
+  img#fish,
+  img#soy {
+    display: none;
   }
 }

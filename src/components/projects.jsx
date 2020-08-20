@@ -15,8 +15,8 @@ function projects(props) {
     <>
     <div className="projects">
       <h1>Projects</h1>
-      <img id="fish" src={fish} />
       <div className="projectsContainer">{grid}</div>
+      <img id="fish" src={fish} />
       <Social />
     </div>
       <Nav />
