@@ -12,7 +12,7 @@ function about() {
         <div></div>
         <h1>About</h1>
         <p>brooklyn, NY resident</p>
-        <p>software engineer working in javascript and react</p>
+        <p>software engineer working in javascript and react.js</p>
         <p>
           formerly at
           <a href="https://www.situ.nyc" target="_blank">
