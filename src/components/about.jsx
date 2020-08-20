@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from './nav';
 import soy from '../assets/soy_sauce.png';
+import ramen from '../assets/ramen.png';
 import Social from './social_buttons';
 
 function about() {
@@ -31,7 +32,7 @@ function about() {
           </a>
         </p>
         <div>
-          <img id="soy" src={soy} />
+          <img id="soy" src={ramen} />
         </div>
         <Social />
       </div>
