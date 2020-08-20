@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "c34a4c0899c5260020c7",
+    "revision": "80073eaca087dc8b2177",
     "url": "/static/css/main.3d8e557a.chunk.css"
   },
   {
-    "revision": "c34a4c0899c5260020c7",
-    "url": "/static/js/main.3e49568a.chunk.js"
+    "revision": "80073eaca087dc8b2177",
+    "url": "/static/js/main.986c75db.chunk.js"
   },
   {
     "revision": "fdfcfda2d9b1bf31db52",
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/static/media/soy_sauce.d47132d1.png"
   },
   {
-    "revision": "3b8bc2037c1db6cf4afcc8c86dcda8da",
+    "revision": "2a1bca26ddfe1f3b268947add7a4af51",
     "url": "/index.html"
   }
 ];
