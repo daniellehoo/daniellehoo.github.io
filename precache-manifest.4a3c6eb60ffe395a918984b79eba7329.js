@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "4cc9d71cf15342b522ee",
-    "url": "/static/css/main.132df4e3.chunk.css"
+    "revision": "209eb9b5843df3ed7459",
+    "url": "/static/css/main.58a182c9.chunk.css"
   },
   {
-    "revision": "4cc9d71cf15342b522ee",
+    "revision": "209eb9b5843df3ed7459",
     "url": "/static/js/main.6daf719e.chunk.js"
   },
   {
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/static/media/pigeon.0da28c85.png"
   },
   {
-    "revision": "28c29057a340c99b18fcc16b008a6a4d",
+    "revision": "57d35974f5596e7da78fb492bd8c3907",
     "url": "/index.html"
   }
 ];
