@@ -32,7 +32,7 @@ body {
 h1 {
   font-family: 'Work Sans', sans-serif;
   font-size: 4rem;
-  margin: 1rem;
+  margin: 1rem 1rem 1rem 2rem;
 }
 
 /* --------- About --------- */
@@ -41,17 +41,11 @@ h1 {
   flex-direction: column;
 }
 
-/* .about img {
-  max-width: 100%;
-  margin: 0 140px 0 0;
-} */
-
 .about p {
   margin-left: 1rem;
 }
 
 .about img,
-/* .projectsContainer img, */
 .projects img#fish {
 position: fixed;
 right: 0;
@@ -81,7 +75,7 @@ a#contact {
 }
 
 .projectList {
-  margin: 0.25rem 0;
+  margin: 0.25rem 0 0.25rem 1rem;
 }
 
 .projects a,
@@ -121,14 +115,17 @@ a#contact:hover,
 
 .project {
   font-family: 'Work Sans', sans-serif;
+  height: calc(100vh - 5rem);
   width: 50%;
   margin: 1.5rem;
+  overflow-y: scroll;
 }
+
 
 .project .title {
   font-size: 1.25rem;
   font-weight: 300;
-  margin: 1rem;
+  margin: 1rem 1rem 1rem 2rem;
 }
 
 /* --------- Nav ---------- */
@@ -263,8 +260,6 @@ a.active {
   }
 
   .project {
-    /* margin-bottom: 10rem; */
-    /* max-height: calc(100% - 20 rem); */
     height: calc(100vh - 10rem);
     width: 100%;
     margin: 0;

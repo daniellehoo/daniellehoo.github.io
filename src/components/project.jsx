@@ -137,9 +137,11 @@ function Project(data) {
     return item.url === url ? <img src={item.img}></img> : null;
   });
 
+  const [active, setActive] = useState(false);
+
   return (
     <>
-        <Nav />
+      <Nav isActive={active} />
       <div className="project">
         <div className="project-content">
           {image}

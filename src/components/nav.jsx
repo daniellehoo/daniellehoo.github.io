@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { Link, NavLink} from "react-router-dom";
 import Home from "./homeButton";
 
-function Nav() {
+function Nav(props) {
   const [active, setActive] = useState(false);
+  console.log(props)
 
   return (
     <div className="nav">
