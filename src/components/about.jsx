@@ -14,7 +14,7 @@ function about() {
       <h1>About</h1>
       <p>brooklyn, NY resident</p>
       <p>software engineer working in javascript and react</p>
-      <p>former Museum of Modern Art (MoMA) employee</p>
+      <p>formerly at SITU/ and the Museum of Modern Art (MoMA)</p>
       <p>interest in contemporary art, design, & web development</p>
       <p>occasional distance runner, wanderer & Canon G16 user</p>
 
