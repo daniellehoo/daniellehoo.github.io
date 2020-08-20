@@ -12,6 +12,7 @@ function replaceTextWithLinks(project, text) {
   let regexOurChildrensTrust = /Our Children's Trust/g;
   let GIEI = /GIEI/g;
   let EAAF = /EAAF/g;
+  let regexReconstruction = /event reconstruction/g;
   let regexNicaragua = /digital platform/g;
   let regexAmnesty = /Amnesty International/g;
   let regexVisualInvestigation = /visual investigation/g;
@@ -49,6 +50,10 @@ function replaceTextWithLinks(project, text) {
         .replace(
           regexNicaragua,
           "<a href='http://gieinicaragua-cartografia-violencia.org/' target='_blank'>digital platform</a>"
+        )
+        .replace(
+          regexReconstruction,
+          "<a href='http://www.marchadelasmadres.com/#/' target='_blank'>event reconstruction</a>"
         )
         .replace(EAAF, "<a href='https://eaaf.org' target='_blank'>EAAF</a>")
         .replace(

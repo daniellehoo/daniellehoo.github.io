@@ -58,7 +58,8 @@ margin: 0 100px 0 0;
   width: 400px;
 }
 
-a#contact {
+a#contact, .about p a {
+margin: .5rem;
   color: red;
 }
 
@@ -97,7 +98,7 @@ a#contact {
 .projectClass a:hover,
 a#contact:hover,
 .back a:hover,
-.projects a:hover {
+.projects a:hover, .about p a:hover {
   color: red;
   border-bottom: 2px solid red;
 }
