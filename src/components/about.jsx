@@ -18,7 +18,7 @@ function about() {
           <a href="https://www.situ.nyc" target="_blank">
             SITU/
           </a>
-          and the<a href="/">Museum of Modern Art (MoMA) </a>
+          and the<a href="https://moma.org" target="_blank">Museum of Modern Art (MoMA) </a>
         </p>
         <p>interest in contemporary art, design, & web development</p>
         <p>occasional distance runner, wanderer & Canon G16 user</p>
